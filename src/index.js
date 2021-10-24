@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.jsx';
 import './style.scss'
+
+// @packages
+import 'remixicon/fonts/remixicon.css'
+
+// @component
+import App from './App.jsx';
 
 ReactDOM.render(
   <React.StrictMode>

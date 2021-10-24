@@ -1,0 +1,93 @@
+.leftBar {
+  padding: 2vh 2.5vh;
+  border-right: 0.5px solid rgb(238, 238, 238);
+  height: 100%;
+
+  .leftBar__logo {
+    width: 100px;
+    object-fit: cover;
+  }
+
+  .leftBar__userCard {
+    box-shadow: rgba(145, 158, 171, 0.24) 0px 0px 2px 0px,
+      rgba(145, 158, 171, 0.24) 0px 16px 32px -4px;
+    padding: 25px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    // @section user setting
+    .leftBar__userCard__userSetting {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      border-bottom: 0.5px solid #aaa;
+      padding-bottom: 15px;
+
+      .MuiButton-root {
+        padding: 0;
+        min-width: 0;
+        color: #000;
+
+        i{
+            font-size: 16px;
+        }
+      }
+
+      .leftBar__userCard__userSetting__editProfile {
+        color: #3498db;
+      }
+    }
+
+    // @section user follow count
+    .leftBar__userCard__followCount{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // @section user info
+    .leftBar__userCard__userInfo {
+      display: flex;
+      flex-direction: row;
+      line-height: 1.5;
+      align-items: flex-end;
+      margin-top: 15px;
+
+      .leftBar__userCard__userInfo__userImage {
+        width: 85px;
+        height: 85px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-right: 10px;
+      }
+
+      .leftBar__userCard__userInfo__details {
+        .leftBar__userCard__userInfo__details__username {
+          color: #aaaaaa;
+          font-size: 13px;
+        }
+
+        .leftBar__userCard__userInfo__details__userCategory {
+          color: rgb(105, 105, 105);
+          margin-top: 10px;
+          font-size: 13px;
+        }
+      }
+    }
+
+    // @section user bio
+    .leftBar__userCard__userbio{
+        margin-top: 15px;
+        line-height: 1.5;
+
+       .leftBar__userCard__userbio__placeholder{
+           color: #aaa;
+           font-size: 12px;
+       }
+    }
+  }
+}

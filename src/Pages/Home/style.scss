@@ -1,0 +1,25 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0 2vw;
+  justify-content: space-between;
+
+  // @column leftbar
+  .home__leftBar {
+    flex: 2.3;
+  }
+
+  // @column posts container
+  .home__postsContainer {
+    flex: 3.4;
+  }
+
+  // @column right bar
+  .home__rightBar {
+    flex: 2.3;
+  }
+}
