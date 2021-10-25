@@ -10,16 +10,95 @@
 
   // @column leftbar
   .home__leftBar {
-    flex: 2.3;
+    width: 30%;
   }
 
   // @column posts container
   .home__postsContainer {
-    flex: 3.4;
+    border-left: 0.5px solid rgb(238, 238, 238);
+    border-right: 0.5px solid rgb(238, 238, 238);
+    width: 45%;
+    padding: 2vh 0;
+
+    h1 {
+      font-size: 18px;
+      border-bottom: 0.5px solid rgb(238, 238, 238);
+      padding: 0 15px 5px 15px;
+    }
+
+    .home__postsContainer__createPost {
+      border-bottom: 0.5px solid rgb(238, 238, 238);
+      padding: 15px;
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+
+      .MuiButton-root {
+        min-width: none;
+        padding: 0;
+        border-radius: 50%;
+
+        img {
+          border-radius: 50% !important;
+          width: 60px;
+          height: 60px;
+          object-fit: cover;
+        }
+      }
+
+      .home__postsContainer__createPost__detailsEditor {
+        padding: 0 20px;
+        flex: 1;
+
+        textarea {
+          border: none;
+          width: 100%;
+          outline: none;
+          height: auto;
+          resize: vertical;
+          font-size: 17px;
+          margin-top: 10px;
+        }
+
+        .home__postsContainer__createPost__detailsEditor__extraTools {
+          // border-top: 0.5px solid rgb(238, 238, 238);
+          // margin-top: 5px;
+          // padding-top: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .postButton {
+            min-width: 0;
+            border-radius: 0;
+            background: #1D9AEF;
+            padding: 8px 30px 5px 30px;
+            color: #fff;
+            border-radius: 15px;
+            font-weight: 700;
+          }
+
+          .home__postsContainer__createPost__detailsEditor__extraTools__icons {
+            .MuiButton-root {
+              min-width: 0;
+              border-radius: 0 !important;
+              background: none;
+
+              i {
+                font-size: 20px;
+                color: #3498db;
+                padding: 5px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   // @column right bar
   .home__rightBar {
-    flex: 2.3;
+    width: 25%;
+    padding: 2vh 15px;
   }
 }
