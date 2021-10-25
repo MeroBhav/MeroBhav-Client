@@ -1,0 +1,95 @@
+.post {
+  padding: 15px;
+  border-bottom: 0.5px solid #eee;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  .post__userImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .post__details {
+    flex: 1;
+    margin-left: 15px;
+    padding-right: 15px;
+
+    .post__details__userDetails {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+
+      .post__details__username,
+      .post__details__postTimestamp {
+        color: #aaa;
+        margin-left: 8px;
+      }
+
+      .post__details__postTimestamp {
+        display: flex;
+        align-items: center;
+
+        i {
+          margin-right: 3px;
+        }
+      }
+    }
+
+    .post__details__feedContent {
+      overflow-wrap: break-word;
+      color: #5a5a5a;
+      font-size: 14px;
+      margin-top: 5px;
+      line-height: 1.5;
+    }
+
+    .post__details__feedImage {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    .post__details__interactions {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .MuiButton-root{
+        color: #5a5a5a;
+        padding: 0 5px;
+        min-width: 0;
+
+        i{
+            font-size: 18px;
+        }
+      }
+
+      .post__details__interactions__icons {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .MuiButton-root {
+          min-width: 0;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          color: #5a5a5a;
+          margin-right: 20px;
+          padding: 0 5px;
+
+          i{
+              margin-right: 5px;
+              font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

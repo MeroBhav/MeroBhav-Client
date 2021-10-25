@@ -9,6 +9,7 @@ import UserImage from "../../Assets/userImage.JPG";
 
 // @packages
 import { Button } from "@mui/material";
+import Post from "../../Component/Post/Post";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
       {/* @column posts container */}
       <div className="home__postsContainer">
         <h1>Home</h1>
+
+        {/* @section create post */}
         <div className="home__postsContainer__createPost">
           <Button>
             <img src={UserImage} alt="" />
@@ -47,6 +50,11 @@ export default function Home() {
               </Button>
             </div>
           </div>
+        </div>
+
+        {/* @section posts */}
+        <div className="home__postsContainer__posts">
+          <Post/>
         </div>
       </div>
 
