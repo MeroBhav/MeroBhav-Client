@@ -2,48 +2,59 @@ import React from "react";
 import "./style.scss";
 
 // @assets
-import Sangya from "../../Assets/Sangya.JPG";
 import { Button } from "@mui/material";
 
-export default function Post() {
+export default function Post(post) {
+  const {
+    user_image,
+    user_fullname,
+    username,
+    uploaded_timestamp,
+    feed_content,
+    feed_image,
+    interactions,
+    additionals,
+  } = post.post;
+
   return (
     <div className="post">
-      <img className="post__userImage" src={Sangya} alt="Sangya" />
+      <img className="post__userImage" src={user_image} alt="Sangya" />
 
       <div className="post__details">
         <div className="post__details__userDetails">
-          <b>Sangya Sherpa</b>
-          <div className="post__details__username">@himitsu-fushigi</div>
+          <b>{user_fullname}</b>
+          <div className="post__details__username">@{username}</div>
           <div className="post__details__postTimestamp">
             <i className="ri-time-line"></i>
-            <span>6h</span>
+            <span>{uploaded_timestamp}</span>
           </div>
         </div>
 
-        <div className="post__details__feedContent">
-          I just love you unconditionally, but all you want is to be friends
-          LOL. 😂 Is this normal that we fall into love with strangers and feel
-          too much connected in no time. ⌛️❤️
-        </div>
+        <div className="post__details__feedContent">{feed_content}</div>
 
-        <img
-          className="post__details__feedImage"
-          src="https://images.unsplash.com/photo-1516589091380-5d8e87df6999?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80"
-          alt="Love"
-        />
+        {feed_image && (
+          <img
+            className="post__details__feedImage"
+            src={feed_image}
+            alt="Love"
+          />
+        )}
 
         <div className="post__details__interactions">
           <div className="post__details__interactions__icons">
             <Button>
-              <i class="ri-heart-3-line"></i> <span>1K</span>
+              <i class="ri-heart-3-line"></i>{" "}
+              <span>{interactions.like_count}</span>
+            </Button>
+
+            <Button disabled={additionals.is_comment_disabled}>
+              <i class="ri-chat-1-line"></i>{" "}
+              <span>{interactions.comment_count}</span>
             </Button>
 
             <Button>
-              <i class="ri-chat-1-line"></i> <span>205</span>
-            </Button>
-
-            <Button>
-              <i class="ri-share-circle-line"></i> <span>3M</span>
+              <i class="ri-share-circle-line"></i>{" "}
+              <span>{interactions.share_count}</span>
             </Button>
           </div>
 

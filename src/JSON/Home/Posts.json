@@ -1,0 +1,64 @@
+[
+    {
+        "user_image": "https://images.unsplash.com/photo-1440133197387-5a6020d5ace2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+        "user_fullname": "Sangya Sherpa",
+        "username": "himitsu-fushigi",
+        "uploaded_timestamp": "14:20 PM, Oct 25, 2021",
+        "feed_content": "I just love you unconditionally, but all you want is to be friends LOL. 😂 Is this normal that we fall into love with strangers and feel too much connected in no time. ⌛️❤️",
+        "feed_image": "https://images.unsplash.com/photo-1516589091380-5d8e87df6999?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80",
+        "interactions": {
+            "like_count": "1000",
+            "comment_count": "726",
+            "share_count": "600"
+        },
+        "additionals": {
+            "is_comment_disabled": false
+        }
+    },
+    {
+        "user_image": "https://images.unsplash.com/photo-1600854964509-6c18d85a260e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80",
+        "user_fullname": "Deepak Tamang",
+        "username": "deepak__",
+        "uploaded_timestamp": "16:00 PM, Oct 25, 2021",
+        "feed_content": "Since the Covid outreach I've been inside the house, playing PubG all the time. I think I've got post traumatic stress disorder. Someone out there, please help.",
+        "interactions": {
+            "like_count": "200",
+            "comment_count": "36",
+            "share_count": "78"
+        },
+        "additionals": {
+            "is_comment_disabled": false
+        }
+    },
+    {
+        "user_image": "https://images.unsplash.com/photo-1494260629490-28c1e8e6f388?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        "user_fullname": "Dikshya Shahi",
+        "username": "deekshyaaaaa",
+        "uploaded_timestamp": "10:20 AM, Oct 21, 2021",
+        "feed_content": "I know you treated me like queen and you want us to be in relationship not like kids thing but foreal and I can feel it. ❤️ I respect that but at times people don't get what they want, it's hard to say but let's limit our bonds to friendship only. I'm sure you'll get someone that'll surely love you unconditionally. 😶‍🌫️🌼",
+        "interactions": {
+            "like_count": "1500",
+            "comment_count": "726",
+            "share_count": "200"
+        },
+        "additionals": {
+            "is_comment_disabled": true
+        }
+    },
+    {
+        "user_image": "https://images.unsplash.com/flagged/photo-1557865797-fed840dee261?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1856&q=80",
+        "user_fullname": "Isha Bhandari",
+        "username": "itsmeisha",
+        "uploaded_timestamp": "3:00 AM, Nov 17, 2021",
+        "feed_content": "I can see the effort of my friend for a girl and knowing both of them I know they share heavenly bonds but the girl is already in trauma due to his ex relationship with a guy and I think my friend should understand the situation of her as well. 😅✨",
+        "feed_image": "https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80",
+        "interactions": {
+            "like_count": "200",
+            "comment_count": "36",
+            "share_count": "78"
+        },
+        "additionals": {
+            "is_comment_disabled": false
+        }
+    }
+]

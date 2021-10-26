@@ -11,9 +11,16 @@ import UserImage from "../../Assets/userImage.JPG";
 import { Button } from "@mui/material";
 import Post from "../../Component/Post/Post";
 
+// @Json
+import Posts from '../../JSON/Home/Posts.json'
+import { Helmet } from "react-helmet";
+
 export default function Home() {
   return (
     <div className="home">
+      <Helmet>
+        <title>Home | MeroBhav</title>
+        </Helmet>
       {/* @column left bar */}
       <div className="home__leftBar">
         <LeftBar />
@@ -54,7 +61,7 @@ export default function Home() {
 
         {/* @section posts */}
         <div className="home__postsContainer__posts">
-          <Post/>
+          {Posts.map((post, index) => <Post post={post} key={index}/>)}
         </div>
       </div>
 
