@@ -3,24 +3,26 @@ import "./style.scss";
 
 // @components
 import LeftBar from "../../Component/Home/LeftBar/LeftBar";
+import Post from "../../Component/Post/Post";
 
 // @assets
 import UserImage from "../../Assets/userImage.JPG";
 
 // @packages
 import { Button } from "@mui/material";
-import Post from "../../Component/Post/Post";
+import { Helmet } from "react-helmet";
 
 // @Json
-import Posts from '../../JSON/Home/Posts.json'
-import { Helmet } from "react-helmet";
+import Posts from "../../JSON/Home/Posts.json";
+import Listeners from "../../JSON/Home/TopListeners.json"
+import ListenerCard from "../../Component/Home/ListenerCard/ListenerCard";
 
 export default function Home() {
   return (
     <div className="home">
       <Helmet>
         <title>Home | MeroBhav</title>
-        </Helmet>
+      </Helmet>
       {/* @column left bar */}
       <div className="home__leftBar">
         <LeftBar />
@@ -52,21 +54,35 @@ export default function Home() {
                 </Button>
               </div>
 
-              <Button className="postButton">
-                  Post
-              </Button>
+              <Button className="postButton">Post</Button>
             </div>
           </div>
         </div>
 
         {/* @section posts */}
         <div className="home__postsContainer__posts">
-          {Posts.map((post, index) => <Post post={post} key={index}/>)}
+          {Posts.map((post, index) => (
+            <Post post={post} key={index} />
+          ))}
         </div>
       </div>
 
       {/* @column right bar */}
-      <div className="home__rightBar">This is right bar</div>
+      <div className="home__rightBar">
+        <div className="home__rightBar__searchBar">
+          <i className="ri-search-2-line"></i>{" "}
+          <input type="text" placeholder="Search MeroBhav..." />
+        </div>
+
+        <hr />
+
+        <div className="home__rightBar__topListeners">
+          <h1>Top Listeners</h1>
+          {
+            Listeners.map((listener, index) => <ListenerCard listener={listener} key={index}/>)
+          }
+        </div>
+      </div>
     </div>
   );
 }

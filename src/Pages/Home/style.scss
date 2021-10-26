@@ -101,5 +101,45 @@
   .home__rightBar {
     width: 25%;
     padding: 2vh 15px;
+
+    .home__rightBar__searchBar{
+      background: #F6F8F8;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border-radius: 9999px;
+      padding: 10px 15px;
+
+      i{
+        font-size: 18px;
+        margin-right: 10px;
+      }
+
+      input{
+        flex: 1;
+        border: none;
+        background: transparent;
+
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+
+    hr{
+      border: none;
+      border-top: 0.5px solid #eee;
+      margin: 15px 0;
+    }
+
+    .home__rightBar__topListeners{
+      background: #F6F8F8;
+      border-radius: 15px;
+      padding: 15px;
+
+      h1{
+        font-size: 16px;
+      }
+    }
   }
 }
