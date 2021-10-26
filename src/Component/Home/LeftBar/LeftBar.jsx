@@ -21,7 +21,7 @@ export default function LeftBar() {
         {/* @section user setting */}
         <div className="leftBar__userCard__userSetting">
           <Button>
-            <i class="ri-equalizer-line"></i>
+            <i className="ri-equalizer-line"></i>
           </Button>
           <Button className="leftBar__userCard__userSetting__editProfile">
             Edit Profile

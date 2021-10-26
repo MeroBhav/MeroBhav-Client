@@ -4,6 +4,9 @@ import "./style.scss";
 // @assets
 import { Button } from "@mui/material";
 
+// @packages
+import { LinkPreview } from '@dhaiwat10/react-link-preview';
+
 export default function Post(post) {
   const {
     user_image,
@@ -12,6 +15,7 @@ export default function Post(post) {
     uploaded_timestamp,
     feed_content,
     feed_image,
+    feed_link,
     interactions,
     additionals,
   } = post.post;
@@ -32,6 +36,11 @@ export default function Post(post) {
 
         <div className="post__details__feedContent">{feed_content}</div>
 
+        {
+          feed_link &&
+          <LinkPreview className="linkPreview" url={feed_link} width="100%" style={{margin: "15px 0"}}/>
+        }
+
         {feed_image && (
           <img
             className="post__details__feedImage"
@@ -43,23 +52,23 @@ export default function Post(post) {
         <div className="post__details__interactions">
           <div className="post__details__interactions__icons">
             <Button>
-              <i class="ri-heart-3-line"></i>{" "}
+              <i className="ri-heart-3-line"></i>{" "}
               <span>{interactions.like_count}</span>
             </Button>
 
             <Button disabled={additionals.is_comment_disabled}>
-              <i class="ri-chat-1-line"></i>{" "}
+              <i className="ri-chat-1-line"></i>{" "}
               <span>{interactions.comment_count}</span>
             </Button>
 
             <Button>
-              <i class="ri-share-circle-line"></i>{" "}
+              <i className="ri-share-circle-line"></i>{" "}
               <span>{interactions.share_count}</span>
             </Button>
           </div>
 
           <Button>
-            <i class="ri-list-settings-line"></i>
+            <i className="ri-list-settings-line"></i>
           </Button>
         </div>
       </div>
