@@ -5,19 +5,33 @@
   -webkit-box-orient: horizontal;
   height: 100vh;
   overflow: hidden;
-  padding: 0 2vw;
+  padding: 0 1vw;
   justify-content: space-between;
 
   // @column leftbar
   .home__leftBar {
-    width: 30%;
+    width: 28%;
+
+    .home__leftBar__additionalInfo{
+      margin-top: 20px;
+      ul{
+        list-style: none;
+        color: #7a7a7a;
+        font-size: 12px;
+
+        li{
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+    }
   }
 
   // @column posts container
   .home__postsContainer {
     border-left: 0.5px solid rgb(238, 238, 238);
     border-right: 0.5px solid rgb(238, 238, 238);
-    width: 45%;
+    width: 44%;
     padding: 2vh 0;
     overflow-y: scroll;
 
@@ -99,7 +113,7 @@
 
   // @column right bar
   .home__rightBar {
-    width: 25%;
+    width: 28%;
     padding: 2vh 15px;
 
     .home__rightBar__searchBar{
@@ -139,20 +153,6 @@
 
       h1{
         font-size: 16px;
-      }
-    }
-
-    .home__rightBar__additionalInfo{
-      margin-top: 20px;
-      ul{
-        list-style: none;
-        color: #7a7a7a;
-        font-size: 12px;
-
-        li{
-          display: inline-block;
-          margin-right: 10px;
-        }
       }
     }
   }

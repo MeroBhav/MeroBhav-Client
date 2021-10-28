@@ -7,6 +7,7 @@ import UserImage from "../../../Assets/userImage.JPG";
 
 // @packages
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 // @JSON
 import User from "../../../JSON/Home/UserProfile.json";
@@ -69,6 +70,29 @@ export default function LeftBar() {
           <div className="leftBar__userCard__userbio__placeholder">Bio</div>
           <p>{User.user_bio}</p>
         </div>
+      </div>
+
+      {/* @section additional resources */}
+      <div className="leftBar__additionalResources">
+        <h2>Additional Resources 🚀</h2>
+        <div className="leftBar__additionalResources__links">
+          <Link>Groups</Link>
+          <Link>Events</Link>
+          <Link>Discussions</Link>
+          <Link>Profesional Listeners</Link>
+        </div>
+
+        <Link>Discover More</Link>
+      </div>
+
+      {/* @section additional Info */}
+      <div className="home__leftBar__additionalInfo">
+        <ul>
+          <li>Terms of Service</li>
+          <li>Privacy Policy</li>
+          <li>User Agreement</li>
+          <li>&copy;MeroBhav, Org. All Rights Reserved</li>
+        </ul>
       </div>
     </div>
   );

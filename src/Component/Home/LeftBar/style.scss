@@ -31,8 +31,8 @@
         min-width: 0;
         color: #000;
 
-        i{
-            font-size: 16px;
+        i {
+          font-size: 16px;
         }
       }
 
@@ -42,10 +42,10 @@
     }
 
     // @section user follow count
-    .leftBar__userCard__followCount{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .leftBar__userCard__followCount {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     // @section user info
@@ -79,14 +79,47 @@
     }
 
     // @section user bio
-    .leftBar__userCard__userbio{
-        margin-top: 15px;
-        line-height: 1.5;
+    .leftBar__userCard__userbio {
+      margin-top: 15px;
+      line-height: 1.5;
 
-       .leftBar__userCard__userbio__placeholder{
-           color: #aaa;
-           font-size: 12px;
-       }
+      .leftBar__userCard__userbio__placeholder {
+        color: #aaa;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .leftBar__additionalResources {
+    margin-top: 30px;
+    background-color: #f5f8f8;
+    padding: 15px 25px;
+    border-radius: 15px;
+
+    h2 {
+      margin-bottom: 5px;
+      font-size: 15px;
+    }
+
+    a{
+      color: #3498db;
+      line-height: 2.5;
+    }
+
+    .leftBar__additionalResources__links {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        text-decoration: none;
+        color: #6a6a6a;
+        margin: 0rem;
+        line-height: 2;
+
+        &:hover {
+          color: #3a3a3a;
+        }
+      }
     }
   }
 }
