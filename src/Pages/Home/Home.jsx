@@ -4,6 +4,7 @@ import "./style.scss";
 // @components
 import LeftBar from "../../Component/Home/LeftBar/LeftBar";
 import Post from "../../Component/Post/Post";
+import ListenerCard from "../../Component/Home/ListenerCard/ListenerCard";
 
 // @assets
 import UserImage from "../../Assets/userImage.JPG";
@@ -15,7 +16,7 @@ import { Helmet } from "react-helmet";
 // @Json
 import Posts from "../../JSON/Home/Posts.json";
 import Listeners from "../../JSON/Home/TopListeners.json"
-import ListenerCard from "../../Component/Home/ListenerCard/ListenerCard";
+import CommunityGuidelines from '../../JSON/Home/CommunityGuidelines.json'
 
 export default function Home() {
   return (
@@ -81,6 +82,20 @@ export default function Home() {
           {
             Listeners.map((listener, index) => <ListenerCard listener={listener} key={index}/>)
           }
+        </div>
+
+        <div className="home__rightBar__communityGuidelines">
+          <h2>Community Guidelines</h2>
+{
+  CommunityGuidelines.map((data, index) => <div className="home__rightBar__communityGuidelines__item" key={index}> 
+  <div className="home__rightBar__communityGuidelines__title">
+    <div className="icon">{data.icon}</div><div className="titleContent">{data.title}</div>
+  </div>
+  <div className="home__rightBar__communityGuidelines__content">
+    {data.content}
+  </div>
+  </div>)
+}
         </div>
       </div>
     </div>

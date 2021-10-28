@@ -12,14 +12,14 @@
   .home__leftBar {
     width: 28%;
 
-    .home__leftBar__additionalInfo{
+    .home__leftBar__additionalInfo {
       margin-top: 20px;
-      ul{
+      ul {
         list-style: none;
         color: #7a7a7a;
         font-size: 12px;
 
-        li{
+        li {
           display: inline-block;
           margin-right: 10px;
         }
@@ -86,7 +86,7 @@
           .postButton {
             min-width: 0;
             border-radius: 0;
-            background: #1D9AEF;
+            background: #1d9aef;
             padding: 8px 30px 5px 30px;
             color: #fff;
             border-radius: 15px;
@@ -116,43 +116,66 @@
     width: 28%;
     padding: 2vh 15px;
 
-    .home__rightBar__searchBar{
-      background: #F6F8F8;
+    .home__rightBar__searchBar {
+      background: #f6f8f8;
       width: 100%;
       display: flex;
       align-items: center;
       border-radius: 9999px;
       padding: 10px 15px;
 
-      i{
+      i {
         font-size: 18px;
         margin-right: 10px;
       }
 
-      input{
+      input {
         flex: 1;
         border: none;
         background: transparent;
 
-        &:focus{
+        &:focus {
           outline: none;
         }
       }
     }
 
-    hr{
+    hr {
       border: none;
       border-top: 0.5px solid #eee;
       margin: 15px 0;
     }
 
-    .home__rightBar__topListeners{
-      background: #F6F8F8;
+    .home__rightBar__topListeners {
+      background: #f6f8f8;
       border-radius: 15px;
       padding: 15px;
 
-      h1{
+      h1 {
         font-size: 16px;
+      }
+    }
+
+    .home__rightBar__communityGuidelines {
+      background: #f5f8f8;
+      border-radius: 15px;
+      padding: 15px;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #5a5a5a;
+
+      h2 {
+        color: #3a3a3a;
+        border-bottom: 0.5px solid #aaa;
+        padding-bottom: 5px;
+      }
+
+      .home__rightBar__communityGuidelines__title {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        margin-top: 10px;
+        color: #3a3a3a;
       }
     }
   }
