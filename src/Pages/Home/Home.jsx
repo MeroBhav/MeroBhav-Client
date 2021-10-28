@@ -82,6 +82,14 @@ export default function Home() {
             Listeners.map((listener, index) => <ListenerCard listener={listener} key={index}/>)
           }
         </div>
+
+        <div className="home__rightBar__additionalInfo">
+          <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>&copy;MeroBhav, Org</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
