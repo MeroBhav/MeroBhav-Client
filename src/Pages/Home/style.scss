@@ -73,6 +73,10 @@
           resize: vertical;
           font-size: 17px;
           margin-top: 10px;
+
+          &:focus{
+            font-size: 14px;
+          }
         }
 
         .home__postsContainer__createPost__detailsEditor__extraTools {
