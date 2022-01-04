@@ -1,0 +1,81 @@
+.leftBar {
+  padding: 2vh 2.5vh;
+  height: 100%; }
+  .leftBar .leftBar__logo {
+    width: 100px;
+    object-fit: cover; }
+  .leftBar .leftBar__userCard {
+    box-shadow: rgba(145, 158, 171, 0.24) 0px 0px 2px 0px, rgba(145, 158, 171, 0.24) 0px 16px 32px -4px;
+    padding: 25px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; }
+    .leftBar .leftBar__userCard .leftBar__userCard__userSetting {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      border-bottom: 0.5px solid #aaa;
+      padding-bottom: 15px; }
+      .leftBar .leftBar__userCard .leftBar__userCard__userSetting .MuiButton-root {
+        padding: 0;
+        min-width: 0;
+        color: #000; }
+        .leftBar .leftBar__userCard .leftBar__userCard__userSetting .MuiButton-root i {
+          font-size: 16px; }
+      .leftBar .leftBar__userCard .leftBar__userCard__userSetting .leftBar__userCard__userSetting__editProfile {
+        color: #3498db; }
+    .leftBar .leftBar__userCard .leftBar__userCard__followCount {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .leftBar .leftBar__userCard .leftBar__userCard__userInfo {
+      display: flex;
+      flex-direction: row;
+      line-height: 1.5;
+      align-items: flex-end;
+      margin-top: 15px; }
+      .leftBar .leftBar__userCard .leftBar__userCard__userInfo .leftBar__userCard__userInfo__userImage {
+        width: 85px;
+        height: 85px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-right: 10px; }
+      .leftBar .leftBar__userCard .leftBar__userCard__userInfo .leftBar__userCard__userInfo__details .leftBar__userCard__userInfo__details__username {
+        color: #aaaaaa;
+        font-size: 13px; }
+      .leftBar .leftBar__userCard .leftBar__userCard__userInfo .leftBar__userCard__userInfo__details .leftBar__userCard__userInfo__details__userCategory {
+        color: dimgray;
+        margin-top: 10px;
+        font-size: 13px; }
+    .leftBar .leftBar__userCard .leftBar__userCard__userbio {
+      margin-top: 15px;
+      line-height: 1.5; }
+      .leftBar .leftBar__userCard .leftBar__userCard__userbio .leftBar__userCard__userbio__placeholder {
+        color: #aaa;
+        font-size: 12px; }
+  .leftBar .leftBar__additionalResources {
+    margin-top: 30px;
+    background-color: #f5f8f8;
+    padding: 15px 25px;
+    border-radius: 15px; }
+    .leftBar .leftBar__additionalResources h2 {
+      margin-bottom: 5px;
+      font-size: 15px; }
+    .leftBar .leftBar__additionalResources a {
+      color: #3498db;
+      line-height: 2.5; }
+    .leftBar .leftBar__additionalResources .leftBar__additionalResources__links {
+      display: flex;
+      flex-direction: column; }
+      .leftBar .leftBar__additionalResources .leftBar__additionalResources__links a {
+        text-decoration: none;
+        color: #6a6a6a;
+        margin: 0rem;
+        line-height: 2; }
+        .leftBar .leftBar__additionalResources .leftBar__additionalResources__links a:hover {
+          color: #3a3a3a; }
+
+/*# sourceMappingURL=style.css.map */

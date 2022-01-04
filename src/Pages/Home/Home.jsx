@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.scss";
+import "./styles/style.css";
 
 // @components
 import LeftBar from "../../Component/Home/LeftBar/LeftBar";

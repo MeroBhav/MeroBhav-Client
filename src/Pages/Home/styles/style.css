@@ -1,0 +1,126 @@
+.home {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0 1vw;
+  justify-content: space-between; }
+  .home .home__leftBar {
+    width: 28%; }
+    .home .home__leftBar .home__leftBar__additionalInfo {
+      margin-top: 20px; }
+      .home .home__leftBar .home__leftBar__additionalInfo ul {
+        list-style: none;
+        color: #7a7a7a;
+        font-size: 12px; }
+        .home .home__leftBar .home__leftBar__additionalInfo ul li {
+          display: inline-block;
+          margin-right: 10px; }
+  .home .home__postsContainer {
+    border-left: 0.5px solid #eeeeee;
+    border-right: 0.5px solid #eeeeee;
+    width: 44%;
+    padding: 2vh 0;
+    overflow-y: scroll; }
+    .home .home__postsContainer h1 {
+      font-size: 18px;
+      border-bottom: 0.5px solid #eeeeee;
+      padding: 0 15px 5px 15px; }
+    .home .home__postsContainer .home__postsContainer__createPost {
+      border-bottom: 0.5px solid #eeeeee;
+      padding: 15px;
+      display: flex;
+      width: 100%;
+      align-items: flex-start; }
+      .home .home__postsContainer .home__postsContainer__createPost .MuiButton-root {
+        min-width: none;
+        padding: 0;
+        border-radius: 50%; }
+        .home .home__postsContainer .home__postsContainer__createPost .MuiButton-root img {
+          border-radius: 50% !important;
+          width: 60px;
+          height: 60px;
+          object-fit: cover; }
+      .home .home__postsContainer .home__postsContainer__createPost .home__postsContainer__createPost__detailsEditor {
+        padding: 0 20px;
+        flex: 1; }
+        .home .home__postsContainer .home__postsContainer__createPost .home__postsContainer__createPost__detailsEditor textarea {
+          border: none;
+          width: 100%;
+          outline: none;
+          height: auto;
+          resize: vertical;
+          font-size: 17px;
+          margin-top: 10px; }
+          .home .home__postsContainer .home__postsContainer__createPost .home__postsContainer__createPost__detailsEditor textarea:focus {
+            font-size: 14px; }
+        .home .home__postsContainer .home__postsContainer__createPost .home__postsContainer__createPost__detailsEditor .home__postsContainer__createPost__detailsEditor__extraTools {
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          .home .home__postsContainer .home__postsContainer__createPost .home__postsContainer__createPost__detailsEditor .home__postsContainer__createPost__detailsEditor__extraTools .postButton {
+            min-width: 0;
+            border-radius: 0;
+            background: #1d9aef;
+            padding: 8px 30px 5px 30px;
+            color: #fff;
+            border-radius: 15px;
+            font-weight: 700; }
+          .home .home__postsContainer .home__postsContainer__createPost .home__postsContainer__createPost__detailsEditor .home__postsContainer__createPost__detailsEditor__extraTools .home__postsContainer__createPost__detailsEditor__extraTools__icons .MuiButton-root {
+            min-width: 0;
+            border-radius: 0 !important;
+            background: none; }
+            .home .home__postsContainer .home__postsContainer__createPost .home__postsContainer__createPost__detailsEditor .home__postsContainer__createPost__detailsEditor__extraTools .home__postsContainer__createPost__detailsEditor__extraTools__icons .MuiButton-root i {
+              font-size: 20px;
+              color: #3498db;
+              padding: 5px 10px; }
+  .home .home__rightBar {
+    width: 28%;
+    padding: 2vh 15px; }
+    .home .home__rightBar .home__rightBar__searchBar {
+      background: #f6f8f8;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border-radius: 9999px;
+      padding: 10px 15px; }
+      .home .home__rightBar .home__rightBar__searchBar i {
+        font-size: 18px;
+        margin-right: 10px; }
+      .home .home__rightBar .home__rightBar__searchBar input {
+        flex: 1;
+        border: none;
+        background: transparent; }
+        .home .home__rightBar .home__rightBar__searchBar input:focus {
+          outline: none; }
+    .home .home__rightBar hr {
+      border: none;
+      border-top: 0.5px solid #eee;
+      margin: 15px 0; }
+    .home .home__rightBar .home__rightBar__topListeners {
+      background: #f6f8f8;
+      border-radius: 15px;
+      padding: 15px; }
+      .home .home__rightBar .home__rightBar__topListeners h1 {
+        font-size: 16px; }
+    .home .home__rightBar .home__rightBar__communityGuidelines {
+      background: #f5f8f8;
+      border-radius: 15px;
+      padding: 15px;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #5a5a5a; }
+      .home .home__rightBar .home__rightBar__communityGuidelines h2 {
+        color: #3a3a3a;
+        border-bottom: 0.5px solid #aaa;
+        padding-bottom: 5px; }
+      .home .home__rightBar .home__rightBar__communityGuidelines .home__rightBar__communityGuidelines__title {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        margin-top: 10px;
+        color: #3a3a3a; }
+
+/*# sourceMappingURL=style.css.map */

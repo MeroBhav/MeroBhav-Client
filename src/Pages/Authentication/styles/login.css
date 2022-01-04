@@ -1,0 +1,82 @@
+.login__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .login__container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 70px; }
+  .login__container form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .login__container form .login__container__inputContainer {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      padding: 0 10px; }
+      .login__container form .login__container__inputContainer.margin {
+        margin-bottom: 20px; }
+      .login__container form .login__container__inputContainer i {
+        font-size: 20px; }
+      .login__container form .login__container__inputContainer input {
+        border: none;
+        outline: none;
+        padding: 10px;
+        background: transparent;
+        min-width: 25vw; }
+    .login__container form .forgotPassword {
+      margin: 10px 0;
+      text-decoration: none;
+      color: #ff7675;
+      font-size: 14px; }
+    .login__container form button {
+      background-color: #1d9aef;
+      width: 100%;
+      cursor: pointer;
+      padding: 15px 0 10px 0;
+      border: none;
+      outline: none;
+      color: #fff;
+      border-radius: 0.5rem; }
+  .login__container .login__container__socialLogin {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-direction: row;
+    min-width: 28vw;
+    border: none;
+    outline: none;
+    padding: 12px 0 10px 0;
+    border-radius: 0.5rem;
+    font-size: 14px;
+    margin-bottom: 20px; }
+    .login__container .login__container__socialLogin img {
+      width: 15px;
+      margin-right: 5px; }
+    .login__container .login__container__socialLogin span {
+      margin-top: 3px; }
+  .login__container .divider {
+    margin: 15px 0 12px 0;
+    font-size: 12px;
+    display: flex;
+    align-items: center; }
+    .login__container .divider p {
+      margin-top: 5px; }
+    .login__container .divider .blob {
+      width: 60px;
+      border-top: 1px solid #000;
+      margin: 0 10px; }
+  .login__container .login__container__signup {
+    display: flex;
+    align-items: center; }
+    .login__container .login__container__signup a {
+      margin-left: 5px;
+      color: #00b894;
+      text-decoration: none; }
+
+/*# sourceMappingURL=login.css.map */
