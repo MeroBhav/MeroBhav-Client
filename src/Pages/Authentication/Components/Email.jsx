@@ -1,15 +1,39 @@
+/** packages */
 import React from "react";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 
+/** context */
+import { useRegisterUserDataLayerValue } from "../../../Context/RegisterDataLayer";
+
 export default function Email() {
+  const [data, dispatch] = useRegisterUserDataLayerValue();
+  const [email, setEmail] = React.useState("");
+
+  /**
+   * @dev this same function is used for api call
+   * * also validation is required
+   */
+  const handleEmailSubmission = (e) => {
+    e.preventDefault();
+    /** @dev data is to reduce warning */
+    data &&
+    dispatch({
+      type: "SET_ACTIVE_REGISTER_USER_PAGE",
+      payload: {
+        active_register_user_page: "verify_code",
+        temp_email: email,
+      }
+    });
+  }
+
   return (
     <div className="register__email__container">
       <h1>Join MeroBhav 🦄</h1>
       <p>Join us with 50K+ other compassionate people</p>
 
-      <form>
-        <TextField label="Email" variant="outlined" />
+      <form onSubmit={handleEmailSubmission}>
+        <TextField label="Email" variant="outlined" value={email} onChange={e => setEmail(e.target.value)}/>
         <p>
           We never share your details with anyone and it won’t be displayed on
           your profile.

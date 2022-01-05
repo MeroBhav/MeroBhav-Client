@@ -3,7 +3,7 @@ import RegisterReducer, { initialState } from "./RegisterReducer";
 
 export const RegisterUserDataLayerContext = React.createContext();
 
-export default function DataLayer({children}) {
+export default function RegisterUserDataLayer({children}) {
   const [dataLayer, dispatch] = React.useReducer(RegisterReducer, initialState);
 
   return (
@@ -13,4 +13,4 @@ export default function DataLayer({children}) {
   );
 }
 
-export const useDataLayerValue = () => React.useContext(RegisterUserDataLayerContext);
+export const useRegisterUserDataLayerValue = () => React.useContext(RegisterUserDataLayerContext);
