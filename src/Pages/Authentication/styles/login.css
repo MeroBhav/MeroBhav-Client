@@ -1,8 +1,15 @@
 .login__container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background: #f8f8f8; }
+  .login__container .blob {
+    position: absolute;
+    height: 50vh;
+    bottom: 100px;
+    right: -10%; }
   .login__container h1 {
     font-size: 28px;
     margin-bottom: 20px;

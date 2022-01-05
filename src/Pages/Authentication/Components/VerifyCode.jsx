@@ -50,7 +50,7 @@ export default function VerifyCode() {
       />
 
       <div className="verifyCode__container__buttons">
-        <Button onClick={handleBackToEmail}>Change Email</Button>
+        <Button className="email" onClick={handleBackToEmail}>Change Email</Button>
         <Button onClick={handleVerifyCode}>Verify</Button>
       </div>
 

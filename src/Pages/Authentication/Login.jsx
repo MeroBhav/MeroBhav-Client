@@ -1,11 +1,15 @@
 import "./styles/login.css";
 
+import Blob from '../../Assets/blob2.png'
+
 import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
     <div className="login__container">
+      <img className="blob" src={Blob} alt="blob" />
+      
       <h1>Welcome Back 👋</h1>
 
       <form>

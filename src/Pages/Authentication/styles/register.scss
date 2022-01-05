@@ -1,5 +1,16 @@
 .register__container {
-  // @dev email container
+  position: relative;
+  height: 100vh;
+  background: #f8f8f8;
+
+  .blob2{
+    position: absolute;
+    height: 50vh;
+    bottom: 100px;
+    right: -10%;
+  }
+
+  // @section email container
   .register__email__container {
     display: flex;
     align-items: center;
@@ -95,6 +106,101 @@
         margin-left: 5px;
         color: #00b894;
         text-decoration: none;
+      }
+    }
+  }
+
+  // @section verify code container
+  .verifyCode__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    b{
+      margin-top: 90px;
+      text-align: center;
+    }
+
+    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+      min-width: 25vw;
+      margin-top: 20px;
+    }
+
+    .verifyCode__container__buttons{
+      display: flex;
+      min-width: 25vw;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      button{
+        background-color: #1d9aef;
+        cursor: pointer;
+        width: 12vw;
+        padding: 15px 0 10px 0;
+        border: none;
+        outline: none;
+        color: #fff;
+        border-radius: 0.5rem;
+
+        &.css-1e6y48t-MuiButtonBase-root-MuiButton-root{
+          font-size: 14px;
+          text-transform: initial;
+        }
+        &.email{
+          background: #2ecc70dc;
+        }
+      }
+    }
+
+    .verifyCode__container__customerSupport{
+      font-size: 14px;
+
+      a{
+        text-decoration: none;
+        color: #2ecc71;
+      }
+    }
+  }
+
+  // @section user registration container
+  .userRegistration__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    b{
+      margin-top: 70px;
+      margin-bottom: 20px;
+    }
+
+    p{
+      text-align: center;
+      font-size: 14px;
+
+      a{
+        color: #4a4a4a;
+      }
+    }
+
+    form{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+        min-width: 25vw;
+        margin-bottom: 20px;
+      }
+
+      .userRegistration__container__submitBtn{
+        background: #1d9aef;
+        color: #fff;
+        width: 25vw;
+        padding: 13px 0 10px 0;
+        margin-bottom: 20px;
       }
     }
   }

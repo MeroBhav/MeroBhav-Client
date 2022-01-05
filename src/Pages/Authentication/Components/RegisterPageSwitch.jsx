@@ -1,5 +1,7 @@
 import "../styles/register.css";
 
+import Blob2 from '../../../Assets/blob2.png'
+
 /** packages */
 import React from "react";
 
@@ -19,6 +21,8 @@ export default function RegisterPageSwitch() {
       {active_register_user_page === "email_registration" && <Email />}
       {active_register_user_page === "verify_code" && <VerifyCode />}
       {active_register_user_page === "register_user_data" && <UserRegistration />}
+
+      <img className="blob2" src={Blob2} alt="blob" />
     </div>
   );
 }
