@@ -1,4 +1,4 @@
-.home {
+.home__container {
   display: flex;
   flex-direction: row;
   -webkit-box-direction: normal;
@@ -168,7 +168,7 @@
       font-size: 13px;
       color: #5a5a5a;
 
-      h2 {
+      h3 {
         color: #3a3a3a;
         border-bottom: 0.5px solid #aaa;
         padding-bottom: 5px;

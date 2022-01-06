@@ -38,6 +38,8 @@
 
       .leftBar__userCard__userSetting__editProfile {
         color: #3498db;
+        font-size: 13px;
+        text-transform: capitalize;
       }
     }
 
@@ -46,6 +48,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      font-size: 14px;
     }
 
     // @section user info
@@ -57,8 +60,8 @@
       margin-top: 15px;
 
       .leftBar__userCard__userInfo__userImage {
-        width: 85px;
-        height: 85px;
+        width: 70px;
+        height: 70px;
         object-fit: cover;
         border-radius: 20px;
         margin-right: 10px;
@@ -87,6 +90,10 @@
         color: #aaa;
         font-size: 12px;
       }
+
+      p{
+        font-size: 14px;
+      }
     }
   }
 
@@ -101,9 +108,10 @@
       font-size: 15px;
     }
 
-    a{
+    a {
       color: #3498db;
       line-height: 2.5;
+      font-size: 14px;
     }
 
     .leftBar__additionalResources__links {
@@ -120,6 +128,15 @@
           color: #3a3a3a;
         }
       }
+    }
+
+    
+  }
+
+  .home__leftBar__additionalInfo{
+    a{
+      text-decoration: none;
+      color: #4a4a4a;
     }
   }
 }

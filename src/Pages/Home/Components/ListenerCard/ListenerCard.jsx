@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.scss";
+import "./style.css";
 
 // @packages
 import { Button } from "@mui/material";

@@ -1,16 +1,16 @@
 import React from "react";
-import "./style.scss";
+import "./style.css";
 
 // @assets
-import Logo from "../../../Assets/logo.png";
-import UserImage from "../../../Assets/userImage.JPG";
+import Logo from "../../../../Assets/logo.png";
+import UserImage from "../../../../Assets/userImage.JPG";
 
 // @packages
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 // @JSON
-import User from "../../../JSON/Home/UserProfile.json";
+import User from "../../../../JSON/Home/UserProfile.json";
 
 export default function LeftBar() {
   return (
@@ -76,21 +76,21 @@ export default function LeftBar() {
       <div className="leftBar__additionalResources">
         <h2>Additional Resources 🚀</h2>
         <div className="leftBar__additionalResources__links">
-          <Link>Groups</Link>
-          <Link>Events</Link>
-          <Link>Discussions</Link>
-          <Link>Profesional Listeners</Link>
+          <Link to="/">Groups</Link>
+          <Link to="/">Events</Link>
+          <Link to="/">Discussions</Link>
+          <Link to="/">Profesional Listeners</Link>
         </div>
 
-        <Link>Discover More</Link>
+        <Link to="/">Discover More</Link>
       </div>
 
       {/* @section additional Info */}
       <div className="home__leftBar__additionalInfo">
         <ul>
-          <li>Terms of Service</li>
-          <li>Privacy Policy</li>
-          <li>User Agreement</li>
+          <li><Link to="/">Terms of Service</Link></li>
+          <li><Link to="/">Privacy Policy</Link></li>
+          <li><Link to="/">User Agreement</Link></li>
           <li>&copy;MeroBhav, Org. All Rights Reserved</li>
         </ul>
       </div>
