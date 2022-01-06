@@ -30,5 +30,8 @@
     min-width: 0;
     border-radius: 15px;
     font-size: 12px !important; }
+    .listenerCard .MuiButton-root:hover {
+      background: #1B9AEE;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
