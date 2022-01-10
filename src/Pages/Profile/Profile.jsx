@@ -3,11 +3,35 @@ import "./styles/style.css";
 import React from "react";
 import ProfileTabs from "./Components/Tabs";
 
+import { useHomeMainDataLayerValue } from "../../Context/HomeMainDataLayer";
+
 export default function Profile() {
+  const [{ active_page }, dispatch] = useHomeMainDataLayerValue();
+
+  const handlePageChange = (e) => {
+    if (active_page === "profile") {
+      dispatch({
+        type: "SET_ACTIVE_HOMEMAIN_PAGE",
+        payload: {
+          active_page: e
+        },
+      });
+
+      window.document.title = "Home | MeroBhav"
+    }
+  };
+
+  /** @dev default scroll to top */
+  const profileMainContainerRef = React.useRef();
+
+  React.useEffect(() => {
+    profileMainContainerRef.current.scrollIntoView({block: "start"})
+  }, [active_page])
+
   return (
-    <div className="profile__container">
+    <div className="profile__container" ref={profileMainContainerRef}>
       <div className="profile__container__topbar">
-        <button>
+        <button onClick={() => handlePageChange('home')}>
           <i className="ri-arrow-left-line"></i>
         </button>
 
@@ -38,7 +62,7 @@ export default function Profile() {
         <p className="bio">I'm basically saying I'm cooler. 🆒</p>
       </div>
 
-      <ProfileTabs/>
+      <ProfileTabs />
     </div>
   );
 }

@@ -9,7 +9,8 @@
     width: 50px;
     height: 50px;
     object-fit: cover;
-    border-radius: 50%; }
+    border-radius: 50%;
+    cursor: pointer; }
   .post .post__details {
     flex: 1;
     margin-left: 15px;
@@ -21,7 +22,12 @@
       .post .post__details .post__details__userDetails .post__details__username,
       .post .post__details .post__details__userDetails .post__details__postTimestamp {
         color: #aaa;
-        margin-left: 8px; }
+        margin-left: 8px;
+        transition: 0.3s all ease; }
+      .post .post__details .post__details__userDetails .post__details__username {
+        cursor: pointer; }
+        .post .post__details .post__details__userDetails .post__details__username:hover {
+          color: #5a5a5a; }
       .post .post__details .post__details__userDetails .post__details__postTimestamp {
         display: flex;
         align-items: center; }

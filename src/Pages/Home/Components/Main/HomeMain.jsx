@@ -3,21 +3,44 @@ import { Button } from "@mui/material";
 import React from "react";
 
 // @assets
-import UserImage from "../../../Assets/userImage.JPG";
+import UserImage from "../../../../Assets/userImage.JPG";
 
 // @Json
 import Posts from "../../Helpers/Posts.json";
 
-import Post from '../../../Components/Post/Post'
+import Post from "../../../../Components/Post/Post";
+
+import { useHomeMainDataLayerValue } from "../../../../Context/HomeMainDataLayer";
 
 export default function HomeMain() {
+  const [{ active_page }, dispatch] = useHomeMainDataLayerValue();
+
+  const handlePageChange = (e) => {
+    if (active_page === "home") {
+      dispatch({
+        type: "SET_ACTIVE_HOMEMAIN_PAGE",
+        payload: {
+          active_page: e
+        },
+      });
+
+      window.document.title = "Profile | MeroBhav"
+    }
+  };
+
+  const homeMainContainerRef = React.useRef();
+
+  React.useEffect(() => {
+    homeMainContainerRef.current.scrollIntoView({block: 'start'})
+  }, [active_page])
+
   return (
-    <div>
+    <div ref={homeMainContainerRef}>
       <h1>Home</h1>
 
       {/* @section create post */}
       <div className="home__postsContainer__createPost">
-        <Button>
+        <Button onClick={() => handlePageChange("profile")}>
           <img src={UserImage} alt="" />
         </Button>
 

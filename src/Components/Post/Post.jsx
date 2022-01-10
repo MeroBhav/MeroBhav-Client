@@ -5,7 +5,9 @@ import "./style.scss";
 import { Button } from "@mui/material";
 
 // @packages
-import { LinkPreview } from '@dhaiwat10/react-link-preview';
+import { LinkPreview } from "@dhaiwat10/react-link-preview";
+
+import { useHomeMainDataLayerValue } from "../../Context/HomeMainDataLayer";
 
 export default function Post(post) {
   const {
@@ -20,14 +22,33 @@ export default function Post(post) {
     additionals,
   } = post.post;
 
+  const [data, dispatch] = useHomeMainDataLayerValue();
+
+  const handlePageChange = (e) => {
+    data &&
+      dispatch({
+        type: "SET_ACTIVE_HOMEMAIN_PAGE",
+        payload: {
+          active_page: e,
+        },
+      });
+
+    window.document.title = "Home | MeroBhav";
+  };
+
   return (
     <div className="post">
-      <img className="post__userImage" src={user_image} alt="Sangya" />
+      <img
+        className="post__userImage"
+        src={user_image}
+        alt="Sangya"
+        onClick={() => handlePageChange('profile')}
+      />
 
       <div className="post__details">
         <div className="post__details__userDetails">
           <b>{user_fullname}</b>
-          <div className="post__details__username">@{username}</div>
+          <div className="post__details__username" onClick={() => handlePageChange('profile')}>@{username}</div>
           <div className="post__details__postTimestamp">
             <i className="ri-time-line"></i>
             <span>{uploaded_timestamp}</span>
@@ -36,10 +57,14 @@ export default function Post(post) {
 
         <div className="post__details__feedContent">{feed_content}</div>
 
-        {
-          feed_link &&
-          <LinkPreview className="linkPreview" url={feed_link} width="100%" style={{margin: "15px 0"}}/>
-        }
+        {feed_link && (
+          <LinkPreview
+            className="linkPreview"
+            url={feed_link}
+            width="100%"
+            style={{ margin: "15px 0" }}
+          />
+        )}
 
         {feed_image && (
           <img

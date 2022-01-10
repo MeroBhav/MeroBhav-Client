@@ -11,6 +11,7 @@
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .post__details {
@@ -27,6 +28,14 @@
       .post__details__postTimestamp {
         color: #aaa;
         margin-left: 8px;
+        transition: 0.3s all ease;
+      }
+
+      .post__details__username{
+        cursor: pointer;
+         &:hover{
+          color: #5a5a5a;
+         }
       }
 
       .post__details__postTimestamp {

@@ -12,10 +12,18 @@ import { Helmet } from "react-helmet";
 import Listeners from "./Helpers/TopListeners.json";
 import CommunityGuidelines from "./Helpers/CommunityGuidelines.json";
 
-// import HomeMain from "../../Components/Home/Main/HomeMain";
+import HomeMain from "./Components/Main/HomeMain";
 import Profile from "../Profile/Profile";
 
+import { useHomeMainDataLayerValue } from "../../Context/HomeMainDataLayer";
+
 export default function Home() {
+  const [{ active_page }] = useHomeMainDataLayerValue();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="home__container">
       <Helmet>
@@ -28,8 +36,15 @@ export default function Home() {
 
       {/* @column posts container */}
       <div className="home__postsContainer">
-        {/* <HomeMain/> */}
-        <Profile/>
+        {
+          // @home page
+          active_page === "home" && <HomeMain />
+        }
+
+        {
+          // @profile page
+          active_page === "profile" && <Profile />
+        }
       </div>
 
       {/* @column right bar */}
