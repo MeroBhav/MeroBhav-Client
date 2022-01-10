@@ -1,3 +1,90 @@
-.editProfile__container{
-    
+.editProfile__container {
+  padding: 20px 2vw;
+
+  .editProfile__container__topbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 20px;
+
+    button {
+      cursor: pointer;
+      background: transparent;
+      outline: none;
+      border: none;
+      padding: 0;
+
+      i {
+        font-size: 24px;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label{
+        margin-bottom: 5px;
+    }
+
+    .coverImage {
+      height: 200px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .imageInput {
+        margin-bottom: 20px;
+      &::-webkit-file-upload-button {
+        visibility: hidden;
+      }
+
+      &::before {
+        content: "Select cover image";
+        display: inline-block;
+        background: linear-gradient(top, #f9f9f9, #e3e3e3);
+        border: 1px solid #999;
+        border-radius: 3px;
+        padding: 5px 8px;
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        text-shadow: 1px 1px #fff;
+        font-weight: 700;
+        font-size: 10pt;
+      }
+
+      &:hover::before {
+        border-color: black;
+      }
+
+      &:active::before {
+        background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+      }
+    }
+
+    .profileImage{
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+        margin-bottom: 20px;
+        
+        .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+            font-size: 15px;
+        }
+    }
+
+    .MuiButton-root{
+        background: #1B9AEE;
+        text-transform: capitalize;
+        padding: 13px 0 10px 0;
+        color: #fff;
+    }
+  }
 }

@@ -9,6 +9,7 @@ import Login from "./Pages/Authentication/Login";
 import Register from "./Pages/Authentication/Register";
 
 import HomeMainDataLayer from "./Context/HomeMainDataLayer";
+import EditProfile from "./Pages/EditProfile/EditProfile";
 
 export default function App() {
   return (
@@ -17,9 +18,9 @@ export default function App() {
         <Switch>
           <HomeMainDataLayer>
             <Route exact path="/" component={Home} />
+            <Route exact path="/auth/login" component={Login} />
+            <Route exact path="/auth/signup" component={Register} />
           </HomeMainDataLayer>
-          <Route exact path="/auth/login" component={Login} />
-          <Route exact path="/auth/signup" component={Register} />
         </Switch>
       </BrowserRouter>
     </div>

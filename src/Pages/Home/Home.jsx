@@ -14,6 +14,7 @@ import CommunityGuidelines from "./Helpers/CommunityGuidelines.json";
 
 import HomeMain from "./Components/Main/HomeMain";
 import Profile from "../Profile/Profile";
+import EditProfile from "../EditProfile/EditProfile";
 
 import { useHomeMainDataLayerValue } from "../../Context/HomeMainDataLayer";
 
@@ -44,6 +45,11 @@ export default function Home() {
         {
           // @profile page
           active_page === "profile" && <Profile />
+        }
+        
+        {
+          // @ Edit profile page
+          active_page === "edit-profile" && <EditProfile />
         }
       </div>
 

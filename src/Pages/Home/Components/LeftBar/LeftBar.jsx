@@ -11,8 +11,22 @@ import { Link } from "react-router-dom";
 
 // @JSON
 import User from "../../Helpers/UserProfile.json";
+import { useHomeMainDataLayerValue } from "../../../../Context/HomeMainDataLayer";
 
 export default function LeftBar() {
+  const [{ active_page }, dispatch] = useHomeMainDataLayerValue();
+
+  const handlePageChange = (e) => {
+      dispatch({
+        type: "SET_ACTIVE_HOMEMAIN_PAGE",
+        payload: {
+          active_page: e
+        },
+      });
+
+      window.document.title = "Home | MeroBhav"
+  };
+
   return (
     <div className="leftBar">
       <img src={Logo} alt="merobhav" className="leftBar__logo" />
@@ -24,7 +38,7 @@ export default function LeftBar() {
           <Button>
             <i className="ri-equalizer-line"></i>
           </Button>
-          <Button className="leftBar__userCard__userSetting__editProfile">
+          <Button onClick={() => handlePageChange("edit-profile")} className="leftBar__userCard__userSetting__editProfile">
             Edit Profile
           </Button>
         </div>
