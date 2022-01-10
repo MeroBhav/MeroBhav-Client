@@ -1,0 +1,143 @@
+.register__container {
+  position: relative;
+  height: 100vh;
+  background: #f8f8f8; }
+  .register__container .blob2 {
+    position: absolute;
+    height: 50vh;
+    bottom: 100px;
+    right: -10%; }
+  .register__container .register__email__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .register__container .register__email__container p {
+      font-size: 15px;
+      color: #7a7a7a; }
+    .register__container .register__email__container h1 {
+      font-size: 28px;
+      margin-top: 70px; }
+    .register__container .register__email__container form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      max-width: 28vw;
+      text-align: center;
+      margin-top: 10px; }
+      .register__container .register__email__container form .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+        margin-bottom: 20px;
+        margin-top: 10px; }
+        .register__container .register__email__container form .css-1u3bzj6-MuiFormControl-root-MuiTextField-root input {
+          min-width: 25vw; }
+      .register__container .register__email__container form button {
+        background-color: #1d9aef;
+        width: 100%;
+        cursor: pointer;
+        padding: 15px 0 10px 0;
+        border: none;
+        outline: none;
+        color: #fff;
+        border-radius: 0.5rem;
+        margin-top: 20px; }
+    .register__container .register__email__container .signup__container__socialSignUp {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-direction: row;
+      min-width: 28vw;
+      border: none;
+      outline: none;
+      padding: 12px 0 10px 0;
+      border-radius: 0.5rem;
+      font-size: 14px;
+      margin-bottom: 20px; }
+      .register__container .register__email__container .signup__container__socialSignUp img {
+        width: 15px;
+        margin-right: 5px; }
+      .register__container .register__email__container .signup__container__socialSignUp span {
+        margin-top: 3px; }
+    .register__container .register__email__container .divider {
+      margin: 15px 0 12px 0;
+      font-size: 12px;
+      display: flex;
+      align-items: center; }
+      .register__container .register__email__container .divider p {
+        margin-top: 5px; }
+      .register__container .register__email__container .divider .blob {
+        width: 60px;
+        border-top: 1px solid #000;
+        margin: 0 10px; }
+    .register__container .register__email__container .signup__container__login {
+      display: flex;
+      align-items: center; }
+      .register__container .register__email__container .signup__container__login a {
+        margin-left: 5px;
+        color: #00b894;
+        text-decoration: none; }
+  .register__container .verifyCode__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .register__container .verifyCode__container b {
+      margin-top: 90px;
+      text-align: center; }
+    .register__container .verifyCode__container .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+      min-width: 25vw;
+      margin-top: 20px; }
+    .register__container .verifyCode__container .verifyCode__container__buttons {
+      display: flex;
+      min-width: 25vw;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .register__container .verifyCode__container .verifyCode__container__buttons button {
+        background-color: #1d9aef;
+        cursor: pointer;
+        width: 12vw;
+        padding: 15px 0 10px 0;
+        border: none;
+        outline: none;
+        color: #fff;
+        border-radius: 0.5rem; }
+        .register__container .verifyCode__container .verifyCode__container__buttons button.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+          font-size: 14px;
+          text-transform: initial; }
+        .register__container .verifyCode__container .verifyCode__container__buttons button.email {
+          background: #2ecc70dc; }
+    .register__container .verifyCode__container .verifyCode__container__customerSupport {
+      font-size: 14px; }
+      .register__container .verifyCode__container .verifyCode__container__customerSupport a {
+        text-decoration: none;
+        color: #2ecc71; }
+  .register__container .userRegistration__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .register__container .userRegistration__container b {
+      margin-top: 70px;
+      margin-bottom: 20px; }
+    .register__container .userRegistration__container p {
+      text-align: center;
+      font-size: 14px; }
+      .register__container .userRegistration__container p a {
+        color: #4a4a4a; }
+    .register__container .userRegistration__container form {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .register__container .userRegistration__container form .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+        min-width: 25vw;
+        margin-bottom: 20px; }
+      .register__container .userRegistration__container form .userRegistration__container__submitBtn {
+        background: #1d9aef;
+        color: #fff;
+        width: 25vw;
+        padding: 13px 0 10px 0;
+        margin-bottom: 20px; }
+
+/*# sourceMappingURL=register.css.map */
