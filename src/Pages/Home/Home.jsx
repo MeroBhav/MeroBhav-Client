@@ -9,8 +9,8 @@ import ListenerCard from "./Components/ListenerCard/ListenerCard";
 import { Helmet } from "react-helmet";
 
 // @Json
-import Listeners from "../../JSON/Home/TopListeners.json";
-import CommunityGuidelines from "../../JSON/Home/CommunityGuidelines.json";
+import Listeners from "./Helpers/TopListeners.json";
+import CommunityGuidelines from "./Helpers/CommunityGuidelines.json";
 
 // import HomeMain from "../../Components/Home/Main/HomeMain";
 import Profile from "../Profile/Profile";

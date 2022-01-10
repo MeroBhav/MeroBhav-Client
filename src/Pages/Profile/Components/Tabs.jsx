@@ -5,6 +5,9 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
+import Posts from "../Helpers/Posts.json";
+import Post from "../../../Components/Post/Post";
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -58,10 +61,14 @@ export default function ProfileTabs() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        Item One
+        {Posts.map((post, index) => {
+          return <Post post={post} key={index} />;
+        })}
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        {Posts.map((post, index) => {
+          return <Post post={post} key={index} />;
+        })}
       </TabPanel>
     </Box>
   );

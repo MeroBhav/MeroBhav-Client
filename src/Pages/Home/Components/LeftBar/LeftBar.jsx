@@ -10,7 +10,7 @@ import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 // @JSON
-import User from "../../../../JSON/Home/UserProfile.json";
+import User from "../../Helpers/UserProfile.json";
 
 export default function LeftBar() {
   return (

@@ -6,7 +6,7 @@ import React from "react";
 import UserImage from "../../../Assets/userImage.JPG";
 
 // @Json
-import Posts from "../../../JSON/Home/Posts.json";
+import Posts from "../../Helpers/Posts.json";
 
 import Post from '../../../Components/Post/Post'
 
